@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="S.png">
+    <title>Super Fun and Cool</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="navbar">
+    <a href="index.html">Welcome</a>
+    <a href="lesson1.html">Lessons</a>
+    <div id="logo">Super Fun and Cool<p class="title-break"></p>Web Scraping Guide</div>
+    <a href="examples.html">Examples</a>
+    <a href="feedback.html">Feedback</a>
+</div>
+<img src="wavy.svg" style="width: 100vw">
+<div class="spacers">
+    <div class="emoji">
+        📋
+    </div>
+    <div class="title1">
+        Scraping Your First Site
+    </div>
+    <div class="text">
+        Now that everything is set up, let's get into the actual scraping! Don't feel bad if it takes a couple attempts, your first scrape is always the hardest.
+    </div>
+
+    <div class="number">
+        1.
+    </div>
+    <div class="title2">
+        Selecting your first element!
+    </div>
+    <div class="text">
+        To select an element to scrape, hover over the element on the display of the website. It should appear blue. Then, click the element. In the case of this Amazon page, you want to scrape the name of the product, so click that on the page.
+    </div>
+    <img src="image2.png" class="image"/>
+
+    <div class="number">
+        2.
+    </div>
+    <div class="title2">
+        Selecting the others
+    </div>
+    <div class="text">
+        Once clicked, your first element should now have a green outline. You might notice that other similar elements on the page are also highlighted in yellow. Because you want the name of every product on the page and not just the single element (the name of the HERSHEY’s product in this case), you'll also click on one of the yellow elements.
+    </div>
+    <img src="image3.png" class="image"/>
+
+    <div class="number">
+        3.
+    </div>
+    <div class="title2">
+        Counting elements
+    </div>
+    <div class="text">
+        Once clicked, every element that was highlighted in yellow is now selected to be scraped, which is indicated by the green highlight. You might also notice that in the panel labeled “Select candy_name” on the left side of the screen, the amount of elements selected for scraping is shown in parentheses (45).
+    </div>
+    <img src="image4.png" class="image"/>
+
+    <div class="number">
+        4.
+    </div>
+    <div class="title2">
+        Viewing data types
+    </div>
+    <div class="text">
+        Now, you need to choose the specific type of data to extract from the selections. This information is shown under Select candy_name(45). By default, the name and url of selected elements is extracted.
+    </div>
+    <img src="image5.png" class="image"/>
+
+    <div class="number">
+        5.
+    </div>
+    <div class="title2">
+        Removing data types
+    </div>
+    <div class="text">
+        There's no need to scrape the URL of the elements, so you can remove it by clicking on the trash can icon next to the Extract url command.
+    </div>
+    <img src="image5.png" class="image"/>
+
+    <div class="number">
+        6.
+    </div>
+    <div class="title2">
+        Adding data types
+    </div>
+    <div class="text">
+        Right now, ParseHub is only extracting the names of the candy products, but you also want the prices. In order to extract the prices relative to the names (as you want prices to be accurate for each candy product), you'll need to use a command called relative select.
+    </div>
+    <img src="image6.png" class="image"/>
+
+    <div class="number">
+        7.
+    </div>
+    <div class="title2">
+        Relative product select
+    </div>
+    <div class="text">
+        Relative select attaches newly selected elements to already selected elements. In this case, it would attach each price to a candy name, which is what you want. In order to use it, you first need to click on the already selected element. After doing so, an arrow will appear from the already selected element prompting you to click on the new element you want to attach to it. It should look like this:
+    </div>
+    <img src="image7.png" class="image"/>
+
+    <div class="number">
+        8.
+    </div>
+    <div class="title2">
+        I'm still missing some!
+    </div>
+    <div class="text">
+        You might notice that some of the prices were not selected. To select them, just repeat step 7 for those elements.
+    </div>
+
+    <div class="number">
+        9.
+    </div>
+    <div class="title2">
+        Extraction time!
+    </div>
+    <div class="text">
+        Let’s rename selection1 to more accurately reflect what it is selected. You can name it candy_price. Now to extract data from the relative selections, click the plus sign next to the command. Then, under advanced, click on “Extract”.
+    </div>
+    <img src="image8.png" class="image"/>
+
+    <div class="number">
+        10.
+    </div>
+    <div class="title2">
+        Select a data type
+    </div>
+    <div class="text">
+        Now, you need to specify the type of data that is extracted. By default, it's on the option “Text”, which extracts the text within the selected element. This is what you want since the price of each product is text data.
+    </div>
+
+    <div class="number">
+        11.
+    </div>
+    <div class="title2">
+        Test the program!
+    </div>
+    <div class="text">
+        To test if your program correctly extracts the product name and price, click the “Get Data” button. Then, click the Run button and wait for the data to be collected.
+    </div>
+    <img src="image9.png" class="image"/>
+
+    <div class="number">
+        12.
+    </div>
+    <div class="title2">
+        Downloading the data
+    </div>
+    <div class="text">
+        Wait for the data to be collected, and download it as a JSON. JSON is a file format that stores and transmits data objects and their attributes, perfect for your use case! After downloading the file, open it in VSCode and take a look at the data. It should look like this:
+    </div>
+    <img src="image11.png" class="image"/>
+
+    <div class="nav">
+        <div class="back">
+            <a href="lesson1.html">← Back</a>
+        </div>
+        <div class="next">
+            <a href="lesson3.html">Next →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

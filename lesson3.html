@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="S.png">
+    <title>Super Fun and Cool</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="navbar">
+    <a href="index.html">Welcome</a>
+    <a href="lesson1.html">Lessons</a>
+    <div id="logo">Super Fun and Cool<p class="title-break"></p>Web Scraping Guide</div>
+    <a href="examples.html">Examples</a>
+    <a href="feedback.html">Feedback</a>
+</div>
+<img src="wavy.svg" style="width: 100vw">
+<div class="spacers">
+    <div class="emoji">
+        🗃️
+    </div>
+    <div class="title1">
+        Scraping Multiple Pages
+    </div>
+    <div class="text">
+        Although scraping one page is useful, a website often has multiple pages that you will want to extract data from. This tutorial will teach you how to navigate multiple pages using ParseHub.
+    </div>
+
+    <div class="number">
+        1.
+    </div>
+    <div class="title2">
+        Where do I start?
+    </div>
+    <div class="text">
+        Although the program does accurately extract data from the Amazon page, it only does so for one page. To make ParseHub extract data from multiple pages, you’ll need to utilize the click command.
+    </div>
+
+    <div class="number">
+        2.
+    </div>
+    <div class="title2">
+        New Select Command
+    </div>
+    <div class="text">
+        First, you need to select the element to be clicked, so add a select command selecting the next page button.
+    </div>
+    <img src="image12.png" class="image"/>
+
+    <div class="number">
+        3.
+    </div>
+    <div class="title2">
+        Deleting the Extras
+    </div>
+    <div class="text">
+        You don’t want to extract anything from this element, so click the download icon within the command to see the extract commands and delete them. Click the trash icon to delete both extract commands.
+    </div>
+    <img src="image13.png" class="image"/>
+
+    <div class="number">
+        4.
+    </div>
+    <div class="title2">
+        Adding the Click Command
+    </div>
+    <div class="text">
+        Rename “selection1” to “Next_Page” to accurately reflect what is selected, and then add the click command to the selection. A click setup page will pop up asking if the click is for a next page button. Click yes.
+    </div>
+    <img src="image14.png" class="image"/>
+    <img src="image15.png" class="image"/>
+
+    <div class="number">
+        5.
+    </div>
+    <div class="title2">
+        Repeating the Code
+    </div>
+    <div class="text">
+        It will then ask how many times the previous code (extracting candy name and price) should be repeated. Since there are 7 pages, repeat the code 6 more times.
+    </div>
+    <img src="image16.png" class="image"/>
+
+    <div class="number">
+        6.
+    </div>
+    <div class="title2">
+        Scraping Time!
+    </div>
+    <div class="text">
+        To actually extract the data, click the “Get Data” button again, and save the data as a JSON file. Congratulations! You’ve learned how to web scrape using ParseHub!
+    </div>
+
+    <div class="nav">
+        <div class="back">
+            <a href="lesson2.html">← Back</a>
+        </div>
+        <div class="next">
+            <a href="lesson4.html">Next →</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
